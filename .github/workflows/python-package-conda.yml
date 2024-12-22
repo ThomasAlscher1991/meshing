@@ -22,9 +22,12 @@ jobs:
 
     - name: Create Conda Environment
       run: |
-        conda env create --name MESHING --file requirements.yml
-	conda init bash
+        conda env create --name MESHING --file requirements.yml  # Create the environment
+
+    - name: Activate Conda Environment
+      run: |
         conda activate MESHING  # Activate the Conda environment
+        echo "Conda environment MESHING activated."
 
     - name: Install with setup.py
       run: |
