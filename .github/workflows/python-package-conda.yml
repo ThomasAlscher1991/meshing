@@ -23,7 +23,7 @@ jobs:
     - name: Create Conda Environment
       run: |
         conda env create --name MESHING --file requirements.yml
-	conda init bash  # Initialize Conda for bash (on Ubuntu; use `cmd.exe` for Windows)
+	conda init bash
         source ~/.bashrc  # Source bashrc to apply conda init changes
         conda activate MESHING
 
