@@ -22,7 +22,7 @@ jobs:
 
     - name: Create Conda Environment
       run: |
-        conda env create --name MESHING --file requirements.yml  # Create the environment
+        conda env create --name MESHING --file requirements2.yml  # Create the environment
         conda init bash
         source ~/.bashrc
 
