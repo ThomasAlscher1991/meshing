@@ -17,6 +17,10 @@ Navigate to directory to create conda environment and install requirements:
 
 ```conda env create --name MESHING --file requirements.yml```
 
+Activate env:
+
+```conda activate MESHING```
+
 Navigate to src and install meshing:
 
 ```python setup.py install```
