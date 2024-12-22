@@ -2,4 +2,7 @@
 src/build
 src/dist
 src/meshing.egg-info
+tests/.pytest_cache
+tests/__tracked_surface.stl
+tests/surface_mesh_temp.stl
 .idea
