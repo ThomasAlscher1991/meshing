@@ -1,0 +1,20 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pyvista
+  - wildmeshing
+  - numpy
+  - scikit-fmm
+  - setuptools
+  - scikit-image
+  - pip:
+    - libigl
+    - pymeshlab
+    - matplotlib
+    - numpy-stl
+
+
+

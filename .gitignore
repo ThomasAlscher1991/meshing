@@ -1,0 +1,5 @@
+# Ignore specific folders
+src/build
+src/dist
+src/meshing.egg-info
+.idea
