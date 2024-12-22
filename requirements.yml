@@ -15,6 +15,7 @@ dependencies:
     - pymeshlab
     - matplotlib
     - numpy-stl
+    - pytest
 
 
 
