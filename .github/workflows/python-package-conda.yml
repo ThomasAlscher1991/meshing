@@ -15,7 +15,6 @@ jobs:
       with:
         miniconda-version: 'latest'
         auto-update-conda: true  # Ensure Conda is updated
-        environment-file: environment.yml  # This will use the requirements.yml (environment file)
 
     - name: Create Conda Environment
       run: |
