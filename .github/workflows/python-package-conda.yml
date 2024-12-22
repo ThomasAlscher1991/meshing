@@ -19,7 +19,8 @@ jobs:
     - name: Create Conda Environment
       run: |
         conda env create --name MESHING --file requirements.yml
-        conda activate MESH
+        conda init
+        conda activate MESHING
 
     - name: Install with setup.py
       run: |
