@@ -30,4 +30,5 @@ jobs:
         source ~/.bashrc  # Source bashrc to apply conda init changes
         conda activate MESHING  # Activate the Conda environment
         echo "Conda environment MESHING for testing activated."
+        pip list
         pytest --maxfail=1 --disable-warnings -q  # Run pytest with options to limit output and failures
