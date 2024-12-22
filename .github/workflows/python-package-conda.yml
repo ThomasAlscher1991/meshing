@@ -26,4 +26,8 @@ jobs:
 
     - name: Run tests
       run: |
+        conda init bash  # Initialize Conda for bash (on Ubuntu)
+        source ~/.bashrc  # Source bashrc to apply conda init changes
+        conda activate MESHING  # Activate the Conda environment
+        echo "Conda environment MESHING for testing activated."
         pytest --maxfail=1 --disable-warnings -q  # Run pytest with options to limit output and failures
