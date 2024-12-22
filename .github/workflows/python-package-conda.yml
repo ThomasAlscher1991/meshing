@@ -23,6 +23,7 @@ jobs:
     - name: Create Conda Environment
       run: |
         conda env create --name MESHING --file requirements.yml  # Create the environment
+        conda init bash
 
     - name: Activate Conda Environment
       run: |
