@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import meshing
 import matplotlib.tri as mtri
+import pytest
+
+def test_2d():
 
 mask=np.zeros((100,100))
 mask[20:80,20:80]=1
