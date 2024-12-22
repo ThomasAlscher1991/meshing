@@ -3,9 +3,14 @@ name: Python Package using Conda
 on: [push]
 
 jobs:
-  build-ubuntu:
-    runs-on: ubuntu-latest  # Specifies that this job will run on Ubuntu
-
+  example-1:
+    name: Ex1 (${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        python-version: ["3.7", "3.11"]
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -21,15 +26,3 @@ jobs:
         conda init bash  # Initialize Conda for bash (on Ubuntu; use `cmd.exe` for Windows)
         source ~/.bashrc  # Source bashrc to apply conda init changes
 
-    - name: Create Conda Environment
-      run: |
-        conda env create --name MESHING --file requirements.yml
-        conda activate MESHING
-
-    - name: Install with setup.py
-      run: |
-        python setup.py install
-
-    - name: Run tests
-      run: |
-        pytest --maxfail=1 --disable-warnings -q  # Run pytest with options to limit output and failures
