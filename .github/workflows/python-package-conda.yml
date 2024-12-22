@@ -22,7 +22,7 @@ jobs:
         conda env create --name MESHING --file requirements.yml  # Create the environment
         conda activate MESHING  # Activate the Conda environment
         echo "Conda environment MESHING activated."
-        python src/setup.py install  # Install the package using setup.py
+        pip install src/. 
         export PYTHONPATH=$PYTHONPATH:$(pwd)
         echo "PYTHONPATH set to $(pwd)"
 
