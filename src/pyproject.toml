@@ -9,7 +9,9 @@ version = "1.0.0"
 description = "A package for meshing."
 readme = "README.md"
 requires-python = "==3.9"
-authors = ["Thomas Alscher"]
+authors = [
+  {name = "Thomas Alscher", email = "alscher@di.ku.dk"}
+]
 
 [project.urls]
 homepage = "https://github.com/ThomasAlscher1991/meshing"
