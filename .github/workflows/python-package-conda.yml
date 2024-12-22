@@ -16,10 +16,14 @@ jobs:
         miniconda-version: 'latest'
         auto-update-conda: true  # Ensure Conda is updated
 
+    - name: Initialize Conda
+      run: |
+        conda init bash  # Initialize Conda for bash (on Ubuntu; use `cmd.exe` for Windows)
+        source ~/.bashrc  # Source bashrc to apply conda init changes
+
     - name: Create Conda Environment
       run: |
         conda env create --name MESHING --file requirements.yml
-        conda init
         conda activate MESHING
 
     - name: Install with setup.py
