@@ -10,10 +10,15 @@ Provides meshing for 3D triangle surface meshes and volumetric tetrahadral meshe
 
 # Installation
 Installation via conda:
+
 ```git clone https://github.com/ThomasAlscher1991/meshing.git```
+
 Navigate to directory to create conda environment and install requirements:
+
 ```conda env create --name MESHING --file requirements.yml```
+
 Navigate to src and install meshing:
+
 ```python setup.py install```
 
 
