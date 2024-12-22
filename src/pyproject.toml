@@ -1,1 +1,15 @@
 
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meshing"
+version = "1.0.0"
+description = "A package for meshing."
+readme = "README.md"
+requires-python = "==3.9"
+authors = ["Thomas Alscher"]
+
+[project.urls]
+homepage = "https://github.com/ThomasAlscher1991/meshing"
