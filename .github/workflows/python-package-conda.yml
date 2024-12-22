@@ -31,4 +31,5 @@ jobs:
         conda activate MESHING  # Activate the Conda environment
         echo "Conda environment MESHING for testing activated."
         pip list
+        python -c "import meshing; print(meshing.__version__)"  # Ensure the package is accessible
         pytest --maxfail=1 --disable-warnings -q  # Run pytest with options to limit output and failures
