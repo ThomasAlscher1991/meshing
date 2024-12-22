@@ -23,7 +23,7 @@ Activate env:
 
 Navigate to src and install meshing:
 
-```python setup.py install```
+```pip install .```
 
 
 
